@@ -1,0 +1,37 @@
+how many people live in atlanta georgia	Atlanta
+how many people visit crater lake national park each year
+where is basque spoken
+what is in the alpine mountain systems
+where are sumitomo tires made
+where is the chupacabra found
+who is victoria jackson from saturday night live
+What is the name of the six-part comic book mini-series based on a character in Call of Duty
+where is cane from the young and the restless
+my name is hyw from the
+my name is hhh from the
+my name is HYW from the
+what antibodies are produced in large quantities
+sit down please
+how is rfid tag powered	RFID
+how is rfid tag powered	Radio-frequency
+how does fraud called the psyche mind
+what does CTA stand for afrotc
+how many high schools are in the
+how many people died at the pentagon in 9 1
+
+def add_document(self, string):
+        self.lookup_dict.clear()
+        with open(string, encoding='utf-8') as f:
+            sents = f.read()
+
+        preprocessed_list = self._preprocess(sents)
+
+        pairs = self.__generate_tuple_keys(preprocessed_list)
+        for pair in pairs:
+            self.lookup_dict[pair[0]].append(pair[1])
+        pairs2 = self.__generate_2tuple_keys(preprocessed_list)
+        for pair in pairs2:
+            self.lookup_dict[tuple([pair[0], pair[1]])].append(pair[2])
+        pairs3 = self.__generate_3tuple_keys(preprocessed_list)
+        for pair in pairs3:
+            self.lookup_dict[tuple([pair[0], pair[1], pair[2]])].append(pair[3])
